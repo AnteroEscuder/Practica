@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Protectoras</title>
+</head>
+<body>
+    <h1>Lista de Protectoras</h1>
+    <ul>
+        {% for protectora in protectoras %}
+            <li>{{ protectora.nombre }} - {{ protectora.descripcion }} - Fundada: {{ protectora.fecha_creacion }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
